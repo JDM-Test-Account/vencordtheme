@@ -5,8 +5,6 @@
  * @version 0.1
  * @description A custom discord theme for vencord 
 */
-@import url(https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css);
-
 /* I've commented most of these values so you can change them yourself. If you're having trouble, or you want to do more than what these values allow for, a volunteer might be able to help you in my server. */
 
 .theme-dark {
@@ -15,15 +13,15 @@
   --dplus-backdrop: url(https://cdn.discordapp.com/attachments/854169483831541761/1097271923727155220/photo-1550242499-b5171f56de56.Png);
 
 /* Accent color, used to decorate the UI with colors. */
-  --dplus-accent-color-hue: 320;
-  --dplus-accent-color-saturation: 60%;
-  --dplus-accent-color-lightness: 31%;
+  --dplus-accent-color-hue: 35;
+  --dplus-accent-color-saturation: 39;
+  --dplus-accent-color-lightness: 42;
 
 /* Foreground color: For things like text and icons. */
-  --dplus-foreground-color-hue-base: 210;
-  --dplus-foreground-color-hue-links: 197;
-  --dplus-foreground-color-saturation-amount: 1;
-  --dplus-foreground-color-lightness-amount: 1;
+  --dplus-foreground-color-hue-base: 35;
+  --dplus-foreground-color-hue-links: 39;
+  --dplus-foreground-color-saturation-amount: 42;
+  --dplus-foreground-color-lightness-amount: 0;
 
 /* Background color: Covers the backdrop so the app is easier to read. */
   --dplus-background-color-hue: 320;
