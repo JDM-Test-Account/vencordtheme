@@ -1,0 +1,216 @@
+/* Blur email and phone */
+[class*="field"]:not(:first-child) > [class*="constrainedRow"] > div > div {
+    filter: blur(5px);
+    transition: filter 0.2s ease-in-out;
+}
+[class*="field"]:not(:first-child) > [class*="constrainedRow"] > div > div:hover {
+    filter: none;
+}
+
+
+/* adds animations to user panel settings */
+.button-12Fmur .contents-3NembX {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+.button-12Fmur:hover .contents-3NembX {
+    transform: rotate(30deg);
+}
+.button-12Fmur:hover .contents-3NembX svg {
+    height: 28px !important;
+    width: 28px !important;
+}
+.button-12Fmur .contents-3NembX svg {
+    transition: width 0.3s, height 0.3s;
+}
+
+  /*i'm new here, say hi!*/
+[class*=newMemberBadge]:before {
+    content: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=64&quality=lossless);
+    transform: scale(0.32) translate(-100%, -110%);
+    display: inline-block;
+}
+
+/* Remove the "Active Now" section from the "Friends" tab */
+[class*="nowPlayingColumn-"] {
+    display: none;
+}
+
+/* removes the "Nitro" tab in the "Direct Messages" page */
+.linkButton-2NshQj > a[href="/store"] {
+    display: none;
+}
+
+/* Change Background of spotify controls plugin */
+#vc-spotify-player {
+  background-color: #0303036c !important;
+}
+
+/* Changes your folders into an actual folder icon instead of the 4 small server icons */
+.closedFolderIconWrapper-3tRb2d {
+    display: none;
+}
+.folderIconWrapper-1oRIZr:not([style=""])::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: inherit;
+    -webkit-mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
+    mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
+    transform: scale(1.3335);
+    filter: brightness(1.5) saturate(1.5);
+}
+
+
+/* Colored role backgrounds */
+.role-2TIOKu {
+    transform: translate(0);
+    overflow: hidden;
+    border: 0;
+
+    --transparency: .4;
+    border-radius: 5px;
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+    margin: 0;
+    left: unset;
+    transform: translate(50%,-50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT {
+    position: static;
+}
+.role-2TIOKu .roleCircle-3TFUOr:after {
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: var(--transparency);
+}
+
+
+@import url(https://minidiscordthemes.github.io/Snippets/HideAKA/HideAKA-badge.css);
+
+/* remove shit from context menu */
+#user-context-invite-to-server,
+#user-context-apps,
+#user-context-note,
+#user-context-call
+{
+  display: none !important;
+}
+
+
+/* hide avatar decorations */
+[class^=avatarDecoration-] {
+  display: none;
+}
+svg[class^=bannerSVGWrapper-] > mask > image {
+  display: none;
+}
+svg[class*=avatarDecorationHint-] {
+  top: 0;
+  left: 0;
+}
+svg[class*=avatarDecorationHint-] > foreignObject {
+  width: 80px;
+  height: 80px;
+  mask: url(#svg-mask-avatar-status-round-80);
+}
+
+/* Centered user profile */
+.usernameSection-3FppkT,
+.container-3g15px,
+.textarea-_59yqs,
+.inputDefault-Ciwd-S,
+.userInfoSectionHeader-2mYYun,
+.text-sm-normal-AEQz4v,
+.content-tXPNDw,
+.section-28YDOf {
+    text-align: center;
+}
+
+.listName-PwbeHL {
+    text-align: right;
+}
+
+.customStatus-19KW6v,
+.eyebrow-1Shfyi {
+    display: flex;
+}
+
+.eyebrow-1Shfyi,
+.memberSinceContainer-2CBD23,
+.section-28YDOf > div,
+.nameTag-35jqbZ,
+.customStatus-19KW6v,
+.tabBar-2hXqzU,
+.headerContainer-1wJjOa {
+    justify-content: center;
+}
+
+.guildNick-fe8oPN {
+    justify-content: right;
+}
+
+/* Vencord toolbox Logo */
+.vc-toolbox-btn svg path {
+  display: none;
+}
+
+.vc-toolbox-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.discordapp.com/attachments/1025149631253991475/1117030250786848878/T00gKRsY.gif");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+:is(.vc-toolbox-btn:hover, .vc-toolbox-btn[class*="selected"]) svg path {
+  display: none;
+}
+
+:is(.vc-toolbox-btn:hover, .vc-toolbox-btn[class*="selected"])::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.discordapp.com/attachments/1025149631253991475/1117030391694508093/dPXyPZUT.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* disable sending super reactions */
+[class^="reactionInner-"]:is([aria-label*=" super " i]) { pointer-events: none; }
+#message-actions-add-reaction-1, #message-add-reaction-1 { display: none; }
+
+/* get rid of ugly guild icon */
+[class*="rowGuildName-"] [class^="flowerStarContainer-"] {
+  display: none;
+}
+/*nicer folder icon */
+path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5V19C2 20.104 2.895 21 4 21H20C21.104 21 22 20.104 22 19V9C22 7.896 21.104 7 20 7Z"] {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    d: path("m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2");
+}

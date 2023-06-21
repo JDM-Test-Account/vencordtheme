@@ -1,0 +1,691 @@
+/**
+* @name edits
+* @version Auto Update
+* @description Edits i made
+* @author Syntax Error
+*/
+@import url('https://clearvision.github.io/ClearVision-v6/main.css');
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+@import url('https://nyri4.github.io/Discolored/main.css');
+@import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
+
+:root {
+  --main-color: #5C00FF;
+  --hover-color: #5C00FF;
+  --success-color: #5C00FF;
+  --danger-color: #982929;
+  --url-color: var(--main-color);
+  --background-image: url('https://r4.wallpaperflare.com/wallpaper/428/317/278/albedo-overlord-overlord-anime-characters-anime-anime-girls-hd-wallpaper-4876cd0800509c38a0ac618e2802142a.jpg');
+  --background-shading: 100%;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 100%;
+  --background-contrast: 100%;
+  --background-saturation: 300%;
+  --background-grayscale: 0%;
+  --background-invert: 0%;
+  --background-blur: 0px;
+  --background-overlay: rgba(0,0,0,0.6);
+  --user-popout-image: transparent;
+  --user-popout-position: center;
+  --user-popout-size: cover;
+  --user-popout-repeat: no-repeat;
+  --user-popout-attachment: fixed;
+  --user-popout-brightness: 100%;
+  --user-popout-contrast: 100%;
+  --user-popout-saturation: 300%;
+  --user-popout-grayscale: 0%;
+  --user-popout-invert: 0%;
+  --user-popout-blur: 2px;
+  --user-modal-image: transparent;
+  --user-modal-position: center;
+  --user-modal-size: auto;
+  --user-modal-repeat: no-repeat;
+  --user-modal-attachment: fixed;
+  --user-modal-brightness: 100%;
+  --user-modal-contrast: 100%;
+  --user-modal-saturation: 300%;
+  --user-modal-grayscale: 0%;
+  --user-modal-invert: 0%;
+  --user-modal-blur: 1px;
+  --home-icon: url('https://clearvision.github.io/icons/discord.svg');
+  --home-position: center;
+  --home-size: 40px;
+  --channel-unread: #5C00FF;
+  --channel-color: rgba(255,255,255,0.3);
+  --muted-color: rgba(255,255,255,0.1);
+  --online-color: #00FF0A;
+  --idle-color: #FF9F00;
+  --dnd-color: #850505;
+  --streaming-color: #593695;
+  --offline-color: #000000;
+  --main-font: gg sans;
+  --code-font: Consolas;
+  --channels-width: 220px;
+  --members-width: 240px;
+  --backdrop-overlay: rgba(0,0,0,0.8);
+  --backdrop-image: var(--background-image);
+  --backdrop-position: var(--background-position);
+  --backdrop-size: var(--background-size);
+  --backdrop-repeat: var(--background-repeat);
+  --backdrop-attachment: var(--background-attachment);
+  --backdrop-brightness: var(--background-brightness);
+  --backdrop-contrast: var(--background-contrast);
+  --backdrop-saturation: var(--background-saturation);
+  --backdrop-invert: var(--background-invert);
+  --backdrop-grayscale: var(--background-grayscale);
+  --backdrop-sepia: var(--background-sepia);
+  --backdrop-blur: var(--background-blur);
+  --bd-blue: var(--main-color);
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
+  --rs-small-spacing: 2px;
+  --rs-medium-spacing: 2px;
+  --rs-large-spacing: 2px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 2px;
+  --rs-large-width: 2px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #00FF0A;
+  --rs-idle-color: #FF9F00;
+  --rs-dnd-color: #FF0000;
+  --rs-offline-color: #000000;
+  --rs-streaming-color: #643da7;
+  
+}
+
+/* Any custom CSS below here */
+
+/* makes memberlist transparent and adds a shadow to match background */
+.membersWrap-3NUR2t :where(.members-3WRCEx, .content-2a4AW9):not(#a){
+  background-color: transparent !important;
+  box-shadow: inset 0 0 0 120px #0000007e;
+}
+
+/* Remove Clear Vision Watermark */
+.wordmark-2u86JB:before{
+    display: none !important;
+}
+
+.wordmark-2u86JB:after {
+    display: none !important;
+}
+
+.container-YkUktl:before {
+    display: none !important;
+}
+
+.container-YkUktl:after {
+    display: none !important;
+}
+
+/* remove gif, nitro and sticker button in chatbox */
+.buttons-uaqb-5 > .button-ejjZWC {
+  display: none;
+}
+
+.button-2fCJ0o {
+    display:none;
+}
+
+
+/* Edits Theme Start */
+
+.invisible-typing-button {
+  display:none;
+}
+
+.interactive-1vLZ_I .interactive-iyXY_x .linkButton-2NshQj {
+  display: none !important
+}
+
+.members-3WRCEx {
+  background: var(--background-secondary-alt);
+}
+
+.membersGroup-2eiWxl {
+  background: var(--background-secondary);
+  margin: 24px 8px 0 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+  padding: 20px 0;
+}
+
+.membersGroup-2eiWxl span {
+  width: 85%;
+  padding: 5px 0;
+  border-bottom: thin solid var(--background-modifier-hover);
+}
+
+.member-2gU6Ar {
+  margin: 0 8px 0 16px;
+  border-radius: 0;
+  background: var(--background-secondary);
+}
+
+.membersGroup-2eiWxl::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -25px;
+  width: 208px;
+  height: 10px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: var(--background-secondary);
+}
+
+.content-2a4AW9 > div[style="height: 0px;"] + .membersGroup-2eiWxl::before {
+  display: none;
+}
+
+.title-3aDrFs {
+  display: none;
+}
+
+.headerCellContent-iBms3e {
+  display: none;
+}
+
+/* neon button */
+:root{
+  --color: #a486ee;
+}
+.lookFilled-yCfaCM, .lookOutlined-3yKVGo, .lookLink-15mFoz, .lookInverted-2mDUMi{
+  --button-background: none;
+  --button-text-color: #fff;
+  --button-shadow: var(--color);
+  --button-outline: var(--color);
+  border: var(--color) .25em solid !important;
+  border-radius: 1em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--color);
+  box-shadow: inset 0 0 0.7em 0 var(--color), 0 0 0.7em 0 var(--color);
+}
+.lookFilled-yCfaCM:hover, .lookOutlined-3yKVGo:hover, .lookLink-15mFoz:hover, .lookInverted-2mDUMi:hover{
+  --button-background: var(--color);
+  --button-text-color: #fff;
+  text-shadow: none;
+  box-shadow: inset 0 0 1.25em 0 var(--color), 0 0 1.25em 0 var(--color);
+}
+
+/* Better Role Color */
+.role-2TIOKu {
+  transform: translate(0);
+  overflow: hidden;
+  --transparency: .4;
+  border-radius: 5px;
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+  margin: 0;
+  left: unset;
+  transform: translate(50%,-50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT {
+  position: static;
+}
+.role-2TIOKu .roleCircle-3K9O3d:before {
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  opacity: var(--transparency);
+}
+
+/*Changes Yt, Insta, Spotify etc links to different colors*/
+[href*="https://mega.io"],
+[href*="https://mega.io"] {
+    color:#ff1e00 !important;
+    font-weight: 700;
+}
+
+[href*="nexusmods.com"],
+[href*="nexusmods.com"] {
+    color:#ff9900 !important;
+    font-weight: 700;
+}
+
+[href*="gta5-mods.com"],
+[href*="gta5-mods.com"] {
+    color:#00ff2a !important;
+    font-weight: 700;
+}
+
+[href*="youtu.be"],
+[href*="youtube.com"] {
+    color:#c4302b !important;
+    font-weight: 700;
+}
+
+[href*="twitch.tv"] {
+    color:#b700ff !important;
+    font-weight: 700;
+}
+[href*="spotify.com"] {
+    color:rgb(19, 185, 4) !important; 
+    font-weight: 700;
+}
+[href*="discord.com/channels/"] {
+    color:#4c4cdb !important;
+}
+[href*="discord.com/channels/"]::before {
+    content:'Jump to Message : ';
+    font-size:16px;
+    font-weight:700;
+    color: #4c4cdb;
+}
+[href*="reddit.com"] {
+    color:#e05a0c !important; 
+    font-weight: 700;
+}
+[href*="instagram.com/"]{
+    background: -webkit-linear-gradient(80deg, rgb(255, 238, 0), rgb(255, 157, 11), #b700ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+} 
+[href*="twitter.com/"]{
+    color:#00acee !important;
+    font-weight: 700;
+}
+[href*="betterdiscord.app/"],
+[href*="discord.gg/"] {
+    color:#7289da !important;
+    font-weight: 700;
+}
+[href*="github.com"]{
+    color:#00f0a8 !important;
+    font-weight: 700;
+}
+
+/* Remove Thread/TTS button */
+#message-thread,
+#message-tts,
+#message-mark-unread {display: none;}
+
+/*optional move padding from 'friends' button and actual list*/
+.privateChannelsHeaderContainer-1UWASm{
+  padding-top: 10px;
+}
+
+/* Hide Help Button */
+.toolbar-3_r2xA a {display: none;}
+
+/*Remove Add a server and Public Server Buttons*/
+.tutorialContainer-2jwoiB, .tutorialContainer-2jwoiB+div { display: none;}
+
+/*Remove help button*/
+[href="https://support.discord.com"] {
+  display: none;
+}
+
+/* Removes Follow banner on bottom of channels */
+.wrapper-2SplAX {display: none;}
+
+/* Removes Chatbox from channel that don't allow you to communicate */
+  .channelTextAreaDisabled-1p2fQv, .channelTextAreaDisabled-1p2fQv > .scrollableContainer-15eg7h{
+    animation: nochat .000001ms forwards; 
+}
+
+/* Misc Edits -------------------------------------------------------------- */
+
+  /* Member Shit -------------------------------------------------------------- */
+
+      /* Group Title */
+      .membersWrap-3NUR2t .membersGroup-2eiWxl {
+        display: flex;
+        align-items: center;
+        height: 32px;
+        line-height: 32px;
+        margin: 4px 4px;
+        padding: 0 10px;
+        background: linear-gradient(to right, transparent, rgba(80, 80, 80, .2) 3%, transparent);
+        color: #aaa;
+    }
+
+    /* Memberlist Wrapper */
+    .container-2o3qEW {
+         border-radius: 4px
+}
+
+    
+/* Bigger about me section */
+.clamped-2ZePhX{
+  -webkit-line-clamp: 190; /*Maximum amount of characters as new lines, unset just breaks links*/
+  max-height:112px;
+  overflow-x: hidden;
+  overflow-y:scroll;
+}
+.clamped-2ZePhX::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+}
+.clamped-2ZePhX::-webkit-scrollbar-track {
+border-radius: 10px; /*How round you want the scrollbar to be. 0 is square, 10px is round.*/
+background-color: rgb(255 255 255 / 10%); /*Edit this to what color you want the track to be.*/
+}
+.clamped-2ZePhX::-webkit-scrollbar-thumb {
+background: linear-gradient(45deg, #00aeff, #a68eff); /* Edit this to whatever color/colors you'd like*/
+border-radius: 10px; /*How round you want the scrollbar thumb to be. 0 is square, 10px is round.*/ 
+}
+
+/* Blurrs Spoilers instead of the black box */
+.spoilerText-27bIiA,
+.spoilerText-27bIiA.hidden-3B-Rum {
+    background-color: transparent !important;
+}
+.spoilerText-27bIiA.hidden-3B-Rum > .inlineContent-2YnoDy {
+    opacity: 1 !important;
+    filter: blur(3px);
+    pointer-events: unset;
+}
+
+/*Makes names bold*/
+.username-h_Y3Us {
+  font-weight: bolder;
+}
+
+/*More space-efficient settings layout*/
+.sidebarRegion-1VBisG,
+.sidebarRegionScroller-FXiQOh {flex: 0 0 auto;}
+.contentColumnDefault-3eyv5o {max-width: unset;}
+
+/*category containers*/
+.containerDefault-3TQ5YN {
+  margin-top: .2em;
+  margin-bottom: .2em;
+  padding: 0px !important;
+  height: 1.4em !important;
+  border: 1px solid RGBA(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: RGBA(0, 0, 0, 0.4);
+}
+/*channel containers*/
+.content-1gYQeQ {
+  background-color: RGBA(0, 0, 0, 0.1);
+  border: 2px solid var(--background-tertiary);
+  padding: 0px;
+}
+.iconItem-1EjiK0 {
+  margin-left: 3px !important;
+  padding: 0px 6px !important;
+}
+.mainContent-20q_Hp{
+  padding: 0px 2px !important;
+}
+  
+/* Rounded Context Menu */
+.menu-1QACrS, .colorDefault-CDqZdO { 
+  border-radius: 15px; 
+}
+
+/* Better Jump To Present Button */
+[class*="jumpToPresentBar"] {
+  display: contents;
+}
+[class*="jumpToPresentBar"] > button:first-child {
+  display: none;
+}
+[class*="jumpToPresentBar"] > button:last-child {
+  position: absolute;
+  z-index: 1;
+  bottom: 24px;
+  right: 22px;
+  padding: 8px !important;
+  height: auto;
+  background-color: #5865F2;
+  box-shadow: var(--elevation-high);
+  border-radius: 100px;
+  display: flex;
+  font-size: 0px;
+  color: transparent;
+  transition: font-size .2s .1s, color .2s, padding .4s .1s;
+}
+[class*="jumpToPresentBar"] > button svg {
+  order: -1;
+  margin: 0px;
+  height: 24px;
+  width: 24px;
+  top: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: #FFFFFF;
+  transition: margin .6s;
+}
+[class*="jumpToPresentBar"]:hover > button {
+  padding: 8px 18px !important;
+  font-size: 14px;
+  color: #FFFFFF;
+  transition: font-size .2s, color .2s .1s, padding .4s;
+}
+[class*="jumpToPresentBar"]:hover > button svg {
+  margin-right: 2px;
+  margin-left: -6px;
+}
+
+/* Channel Names Capitalized */
+.channelName-3KPsGw {text-transform: capitalize}
+
+/* offline tags in member list */
+.offline-22aM7E .wrapper-1VLyxH > svg > foreignObject{mask:url(#svg-mask-avatar-status-round-32);}
+.offline-22aM7E .wrapper-1VLyxH > svg > foreignObject::before {
+content: "";
+width: 10px;
+height: 10px;
+background-color: hsl(214, calc(var(--saturation-factor, 1) * 9.9%), 50.4%);;
+display: block;
+right: 0px;
+bottom: 0px;
+position: absolute;
+border-radius: 50%;
+}
+.offline-22aM7E .wrapper-1VLyxH > svg > foreignObject::after{
+content: "";
+width: 6px;
+height: 6px;
+background-color: var(--background-secondary-alt);
+display: block;
+right: 2px;
+bottom: 2px;
+position: absolute;
+border-radius: 50%;
+z-index: 999!important;
+}
+.offline-22aM7E{opacity: 1;}
+
+/* edited text */
+.timestamp-p1Df1m:not(.timestampInline-_lS3aK, .timestampVisibleOnHover-9PEuZS) time::after {
+        content: " (" attr(aria-label) ")";
+        color: var(--text-muted);
+        font-size: 0.625rem;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: lowercase;
+}
+.edited-1v5nT8:not(.message-translate-indicator) {
+    display: none;
+}
+
+.rolesList-3uZoaa {
+  gap: 8px;
+}
+.role-2TIOKu {
+  margin: 0;
+  height: auto;
+  padding: 6px 8px;
+  border-radius: 4px;
+  gap: 4px;
+  position: relative;
+  overflow: hidden;
+}
+.role-2TIOKu:hover .roleCircle-1EgnFN {
+  width: 100%;
+  opacity: 1;
+}
+.role-2TIOKu:hover .roleCircle-1EgnFN:not(:empty) ~ .roleName-2ZJJYR {
+  margin-left: 22px;
+}
+.roleCircle-1EgnFN {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  width: 85%;
+  -webkit-mask: linear-gradient(90deg, black, transparent);
+          mask: linear-gradient(90deg, black, transparent);
+  filter: none;
+  opacity: 0.3;
+  justify-content: flex-start;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.15s ease;
+}
+.roleName-2ZJJYR {
+  position: relative;
+  margin: 0;
+  transition: margin-left 0.15s ease;
+}
+.roleRemoveIcon-387wKV {
+  width: 16px;
+  height: 16px;
+}
+
+.unreadPill-3nEWYM{
+  top: -6px;
+}
+
+ /* "Quote" style replied message */
+ #app-mount .repliedMessage-3Z6XBG {
+  position: absolute;
+  top: 25px;
+  left: 86px;
+  background-color: #35088494;
+  border: 1px solid var(--background-tertiary);
+  width: fit-content;
+  max-width: calc(60vw - 240px);
+  margin-left: -5px;
+  padding: 3px 5px;
+  border-radius: 0 4px 4px 4px;
+  box-sizing: border-box;
+}
+#app-mount .repliedMessage-3Z6XBG > div {
+  position: relative;
+  z-index: 1;
+  
+}
+#app-mount .repliedMessage-3Z6XBG img.replyAvatar-sHd2sU {
+  display: none;
+  
+}
+#app-mount .repliedMessage-3Z6XBG img.emoji {
+  display: inline;
+  
+}
+#app-mount .repliedMessage-3Z6XBG .username-h_Y3Us {
+  margin-right: 5px;
+  
+}
+#app-mount .repliedMessage-3Z6XBG:before {
+  content: none;
+  
+}
+#app-mount .repliedMessage-3Z6XBG:after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -4px;
+  z-index: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 0; 
+  background: var(--background-secondary);
+  border: 1px solid var(--background-tertiary);
+  transform: skewX(45deg);
+  border-bottom: none;
+  border-right: none;
+}
+#app-mount .repliedMessage-3Z6XBG + .contents-2MsGLg .header-2jRmjb {
+  margin-bottom: 32px;
+  
+}
+
+
+/* Limits the height of codeblocks and adds a scrollbar */
+.markup-eYLPri blockquote, .markup-eYLPri pre > code{
+  max-height:150px; /*Change this to your height preference.*/
+  overflow-x: hidden;
+  overflow-y:scroll;
+  }
+  .markup-eYLPri blockquote::-webkit-scrollbar, .markup-eYLPri pre > code::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+  }
+  .markup-eYLPri blockquote::-webkit-scrollbar-track , .markup-eYLPri pre > code::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(255 255 255 / 8%);/*Change this to your color choice or just remove it entirely.*/
+  }
+  .markup-eYLPri blockquote::-webkit-scrollbar-thumb, .markup-eYLPri pre > code::-webkit-scrollbar-thumb {
+  background-color: rgb(13 81 239 / 70%); /*Change this to your color choice or just remove it entirely.*/
+  border-radius: 10px;
+  }
+  .markup-eYLPri blockquote, .markup-eYLPri pre > code {
+  max-width: 629px;
+  }
+
+/* Limits the height of codeblocks and adds a scrollbar */
+.markup-eYLPri blockquote, .markup-eYLPri pre > code{
+  max-height:150px; /*Change this to your height preference.*/
+  overflow-x: hidden;
+  overflow-y:scroll;
+  }
+
+/* Hide New Message Stuff When Unfocused */
+/* Red New Message Bar */
+html:not(.app-focused) .isUnread-3Lojb- {
+  border-color: transparent
+}
+.isUnread-3Lojb- {
+  transition: .15s
+}
+
+/* New Message Bar */
+html:not(.app-focused) .newMessagesBar-1hF-9G {
+  opacity: 0
+}
+.newMessagesBar-1hF-9G {
+  transition: .15s
+}
+
+/* Revert user popout 1 */ 
+#account.menu-1QACrS {
+  width: 220px;
+}
+#account.menu-1QACrS .submenu-1apzyU[aria-activedescendant^="account-status-picker"] {
+  max-width: 220px;
+}
+#account.menu-1QACrS .profileBody-3QbfPe {
+  display:none;
+}
+
+/* Member list fix */
+.membersGroup-2eiWxl::before {
+  display: none
+}
+
+.field-21XZwa {
+  background-color: #5C00FF ;
+}
